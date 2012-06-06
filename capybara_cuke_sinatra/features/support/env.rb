@@ -1,7 +1,7 @@
 require_relative "../../myapp"
 
-require "Capybara"
-require "Capybara/cucumber"
+require "capybara"
+require "capybara/cucumber"
 require "rspec"
 
 World do
