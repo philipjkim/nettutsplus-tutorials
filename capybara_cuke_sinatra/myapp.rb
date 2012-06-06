@@ -1,4 +1,5 @@
 require "sinatra/base"
+require "haml"
 
 class MyApp < Sinatra::Base
   get "/" do
@@ -8,10 +9,10 @@ class MyApp < Sinatra::Base
   post "/thankyou" do
     @name = params["name"]
     @email = params["email"]
-    haml: thankyou
+    haml :thankyou
   end
 
   get "/form" do
-    haml: form
+    haml :form
   end
 end
